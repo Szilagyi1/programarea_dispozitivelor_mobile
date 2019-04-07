@@ -59,7 +59,20 @@
 </div>
 
 <script>
- var worker1=new Worker('worker1.js');
+ var w;
+	function startWorker(){
+		if(typeof(Worker)!=="undefined"){
+			if(typeof(w)=="undefined"){
+				w=new Worker("worker1.js");
+			}
+			w.onmessage=function(e){
+				document.getElementById('rezultat').innerHtml=e.data;
+			};
+		}
+		else{
+			document.getElementById('rezultat').innerHtml="Worker nu este suportat ";
+		}
+	}
  </script>
 
 
