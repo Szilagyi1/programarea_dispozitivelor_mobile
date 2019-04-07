@@ -60,7 +60,7 @@
 	function startWorker(){
 		if(typeof(Worker)!=="undefined"){
 			if(typeof(w)=="undefined"){
-				w=new Worker("worker1.js");
+				w=new Worker("worker1_1.js");
 			}
 			w.onmessage=function(e){
 				document.getElementById('rezultat').innerHtml=e.data;
