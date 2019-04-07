@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="urf-8">
+			<meta name="viewport" content="width=device-witdth,initial-scale=1">
+			<link rel="stylesheet" href="main.css"/>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		</head>
+
+<body>
+	<!--Menu-->
+	<header class="header">
+  <a href="" class="logo">CSS Nav</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <ul class="menu">
+    <li><a href="#work">Our Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+<!--Sfarsit menu-->
+
+   <div class="container">
+		<div class="row">
+		 <div class="col-3">
+			<img id="image1"src="img/casual.jpg" alt="casual"/>
+		 </div>
+		 <div class="col-3">
+		 <img id="image2" src="img/conic.jpg" alt="conic"/>
+		 
+		 </div>
+		 <div class="col-3">
+		 <img  id="image3" src="img/mexton.jpg" alt="mexton"/>
+		 </div>
+		</div>
+   </div>
+   
+   <!--Modal -->
+   <a href="#" class="modal-trigger" data-modal="modal-name">Modal open!</a> <!-- Trigger Modal. -->
+
+<!-- Modal -->
+<div class="modal" id="modal-name">
+  <div class="modal-sandbox"></div>
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="close-modal">&#10006;</div> 
+      <h1>Simple modal box</h1>
+    </div>
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta saepe, atque, iure quidem maiores non dolores, fuga eaque voluptatibus corporis accusantium quas. Eligendi velit eum fugiat eius? Distinctio reiciendis sint error, repellat ut soluta doloremque, accusamus vitae placeat?</p>
+      <p>Laboriosam voluptas, iure rem provident laborum culpa atque fugit inventore sit. Corrupti dolore architecto inventore officia, odit totam voluptatem laboriosam tempore reiciendis, et neque, consequuntur. Non, tenetur? Tempore reprehenderit tenetur nemo asperiores alias commodi assumenda architecto minima numquam repellendus debitis nulla, rerum officia itaque, sunt nihil sequi quod perspiciatis, animi quas voluptates velit aperiam voluptatem.</p>
+      <br />
+      <button class="close-modal">Close!</button>
+    </div>
+  </div>
+</div>
+
+<script>
+ var worker1=new Worker('worker1.js');
+ </script>
+
+
+</body>
+
+</html>		
