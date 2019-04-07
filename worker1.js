@@ -1,4 +1,4 @@
- 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 $('#image1').click(function(){
 $(".modal-trigger").click(function(e){
   e.preventDefault();
